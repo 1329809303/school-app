@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+	<TextView
+		android:id="@+id/textView8"
+		android:layout_width="122dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="57dp"
+		android:layout_marginEnd="289dp"
+		android:layout_marginRight="289dp"
+		android:gravity="bottom"
+		android:text="发帖主题:"
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#000000"
+		android:textSize="20dp"
+		android:textStyle="bold" />
+
+	<ImageButton
+		android:id="@+id/to_myhome"
+		android:layout_width="match_parent"
+		android:layout_height="56dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="0dp"
+		android:layout_marginEnd="0dp"
+		android:layout_marginRight="0dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/head" />
+
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="136dp"
+		android:layout_marginEnd="306dp"
+		android:layout_marginRight="306dp"
+		android:gravity="bottom"
+		android:text="问题描述："
+		android:textAppearance="?android:attr/textAppearanceLarge"
+		android:textColor="#000000"
+		android:textSize="20dp"
+		android:textStyle="bold" />
+
+	<EditText
+		android:id="@+id/add_content"
+		android:layout_width="408dp"
+		android:layout_height="169dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="189dp"
+		android:layout_marginEnd="0dp"
+		android:layout_marginRight="0dp"
+		android:background="@android:drawable/edit_text"
+		android:enabled="true"
+		android:gravity="top"
+		android:hint="请输入问题描述"
+		android:inputType="textMultiLine"
+		android:maxLines="10"
+		android:minLines="8"
+		android:scrollbars="vertical"
+		android:textColor="#000000"
+		android:textColorHint="#C0C4CC"></EditText>
+
+	<Button
+		android:id="@+id/publishtask"
+		android:layout_width="56dp"
+		android:layout_height="55dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="1dp"
+		android:layout_marginEnd="1dp"
+		android:layout_marginRight="1dp"
+		android:background="#FFFFFF"
+		android:text="发布"
+		android:textColor="#D3D3D3"
+		android:textSize="20dp" />
+
+	<TextView
+		android:id="@+id/news_item_content_text_view3"
+		android:layout_width="333dp"
+		android:layout_height="46dp"
+		android:layout_alignParentStart="true"
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentTop="true"
+		android:layout_marginStart="78dp"
+		android:layout_marginLeft="78dp"
+		android:layout_marginTop="10dp"
+		android:text="             发布问题"
+		android:textColor="#2196F3"
+		android:textSize="25dp" />
+
+	<EditText
+		android:id="@+id/editText"
+		android:layout_width="321dp"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="49dp"
+		android:layout_marginEnd="0dp"
+		android:layout_marginRight="0dp"
+		android:ems="10"
+		android:inputType="textPersonName" />
+
+	<ImageButton
+		android:id="@+id/imageButton2"
+		android:layout_width="125dp"
+		android:layout_height="128dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_marginTop="359dp"
+		android:layout_marginEnd="283dp"
+		android:layout_marginRight="283dp"
+		app:srcCompat="@drawable/addpicture" />
+
+	<ImageButton
+		android:id="@+id/imageButton4"
+		android:layout_width="match_parent"
+		android:layout_height="47dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginEnd="0dp"
+		android:layout_marginRight="0dp"
+		android:layout_marginBottom="0dp"
+		app:srcCompat="@drawable/bianji" />
+
+</RelativeLayout>

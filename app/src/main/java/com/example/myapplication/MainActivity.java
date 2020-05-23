@@ -1,34 +1,53 @@
 package com.example.myapplication;
 
+
+import android.content.Intent;
+import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.view.View;
-import android.widget.*;
-import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.TextView;
+import com.example.myapplication.DBUtil;
+import java.sql.Connection;
 
 public class MainActivity extends AppCompatActivity {
-    Button button ;
-    TextView textView ;
-
-    int flag = 1; // 一个变
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        button = (Button) findViewById(R.id.button);
-        textView = (TextView) findViewById(R.id.textView);
-    }
-    public void btn1_click(View view)
-    { // 按一次变一次
-        System.out.println(flag);
-        if (flag==1) {
-            String str_1 = "botton clicked";
-            textView.setText(str_1);
-            flag = 0; // 别忘了改flag
-        } else{
-            String str_2 = "activity_main 的 xml";
-            textView.setText(str_2);
-            flag = 1;
-        }
+
+        TextView userName=findViewById(R.id.userName);
+        TextView Password=findViewById(R.id.passwd);
+        Button btn_register = findViewById(R.id.btn_register);
+        Button btn_login=findViewById(R.id.btnLogin);
+        ImageButton taskcontent=findViewById(R.id.article_backgroud);
+
+
+        String username = getIntent().getStringExtra("username");
+        String password = getIntent().getStringExtra("psw");
+        userName.setText(username);
+        Password.setText(password);
+
+        //注册控件的点击事件
+        btn_register.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //为了跳转到注册界面，并实现注册功能
+                Intent intent=new Intent(MainActivity.this,RegisterActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        //登录的点击事件
+        btn_login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

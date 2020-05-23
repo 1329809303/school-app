@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/article"
+    android:layout_width="match_parent"
+    android:layout_height="330dp"
+    android:orientation="vertical">
+
+    <ImageButton
+        android:id="@+id/article_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="301dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:srcCompat="@drawable/download" />
+
+    <TextView
+        android:id="@+id/article_title"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
+        android:text="             求解一道数分题"
+        android:textColor="#2196F3"
+        android:textSize="25dp" />
+
+    <ImageView
+        android:id="@+id/article_UserImage"
+        android:layout_width="71dp"
+        android:layout_height="66dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginRight="340dp"
+        app:srcCompat="@drawable/image" />
+
+    <TextView
+        android:id="@+id/article_username"
+        android:layout_width="216dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginRight="124dp"
+        android:text=" 发贴人:李华   发帖时间:05-20" />
+
+    <TextView
+        android:id="@+id/article_content"
+        android:layout_width="400dp"
+        android:layout_height="31dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:text="求各位大佬帮我看看这道题应该怎么做" />
+
+    <ImageView
+        android:id="@+id/article_picture"
+        android:layout_width="209dp"
+        android:layout_height="154dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="115dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginRight="202dp"
+        app:srcCompat="@drawable/question" />
+
+    <ImageView
+        android:id="@+id/article_dianzan"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        app:srcCompat="@drawable/dianzan" />
+</RelativeLayout>
+
