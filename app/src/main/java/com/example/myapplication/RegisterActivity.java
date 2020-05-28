@@ -10,9 +10,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
+
 public class RegisterActivity extends AppCompatActivity {
     Button btn_register;//注册按钮
-    Button btn_login; //返回按钮
     Button to_login; //返回按钮
     EditText user_name,psw1,psw2;
 
@@ -42,10 +47,40 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(RegisterActivity.this,MainActivity.class);
-                intent.putExtra("username",user_name.getText().toString());
-                intent.putExtra("psw",psw1.getText().toString());
-                startActivity(intent);
+              new Thread(new Runnable() {
+                  @Override
+                  public void run() {
+                        try {
+                            String json="{\n" +
+                                    "\t\"userName\":\"xhc1\",\n" +
+                                    "\t\"password\":\"x123456\",\n" +
+                                    "\t\"sex\":\"男\",\n" +
+                                    "\t\"age\":1\n" +
+                                    "}";
+                            OkHttpClient client =new OkHttpClient();
+                            Request request=new Request.Builder()
+                                    .url("http://192.168.0.111:8086/rest/signup")
+                                    .post(RequestBody.create(MediaType.parse("application/json"),json))
+                                    .build();
+                            Response response =client.newCall(request).execute();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(RegisterActivity.this,"网络连接成功！",Toast.LENGTH_SHORT).show();
+                                }
+                            });
+
+                        }catch (Exception e){
+                            e.printStackTrace();
+                            runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    Toast.makeText(RegisterActivity.this,"网络连接失败！",Toast.LENGTH_SHORT).show();
+                                }
+                            });
+                        }
+                  }
+              }).start();
             }
         });
     }
