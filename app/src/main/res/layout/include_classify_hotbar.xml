@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/shape_classify_menu_hotclassify"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:id="@+id/ll_classify_bicycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/backte" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="自行车" />
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="12dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/clothes" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="衣  服" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_classify_autobicycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="8dp"
+                android:src="@mipmap/food" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="食 品" />
+
+            <ImageView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="12dp"
+                android:src="@mipmap/gym_equipment" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="健身器材" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_classify_computer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="8dp"
+                android:src="@mipmap/computer" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="电  脑" />
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="12dp"
+                android:src="@mipmap/ticket" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="票  券" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_classify_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="8dp"
+                android:src="@mipmap/book" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="教  材" />
+
+            <ImageView
+
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="@drawable/shape_classify_menu_oril"
+                android:padding="12dp"
+                android:src="@mipmap/books" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="书  籍" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/shape_classify_menu_hotclassify"
+        android:padding="1dp"
+        android:text="热门分类" />
+</RelativeLayout>

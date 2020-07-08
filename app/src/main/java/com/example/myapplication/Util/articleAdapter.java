@@ -5,11 +5,9 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import com.example.myapplication.LoginActivity;
 
 
 import androidx.recyclerview.widget.RecyclerView;
@@ -65,7 +63,7 @@ public class articleAdapter extends RecyclerView.Adapter<articleAdapter.MyHolder
             super(itemView);
             content=(TextView)itemView.findViewById(R.id.article_content);
             picture=(ImageView)itemView.findViewById(R.id.article_picture);
-            title=(TextView)itemView.findViewById(R.id.article_title);
+            title=(TextView)itemView.findViewById(R.id.add_title);
             UserImage=(ImageView)itemView.findViewById(R.id.article_UserImage);
             username=(TextView)itemView.findViewById(R.id.article_username);
             background=(ImageButton)itemView.findViewById(R.id.article_backgroud);

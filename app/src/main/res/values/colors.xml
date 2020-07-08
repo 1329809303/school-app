@@ -3,4 +3,18 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#eb4f38</color>
+    <color name="activity_start_bg_color">#8800B7FF</color>
+    <color name="activity_guide_selected_color">#FFF</color>
+    <color name="activity_guide_unselected_color">#363685</color>
+    <color name="font_color_white">#FFF</color>
+    <color name="theam_color">#3A7CBD</color>
+    <color name="black">#000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
 </resources>
+
+
+
+

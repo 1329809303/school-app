@@ -1,6 +1,7 @@
 package com.example.myapplication.Dao;
 
 public class article {
+    private String id;
     private int UserImage;
     private  String title;
     private  String content;
@@ -16,6 +17,14 @@ public class article {
         this.UserImage=UserImage;
         this.username=username;
         this.background=background;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int getBackground() {

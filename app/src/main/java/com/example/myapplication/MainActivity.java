@@ -9,8 +9,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import com.example.myapplication.DBUtil;
-import java.sql.Connection;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -22,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         TextView Password=findViewById(R.id.passwd);
         Button btn_register = findViewById(R.id.btn_register);
         Button btn_login=findViewById(R.id.btnLogin);
-        ImageButton taskcontent=findViewById(R.id.article_backgroud);
 
 
         String username = getIntent().getStringExtra("username");
@@ -35,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //为了跳转到注册界面，并实现注册功能
-                Intent intent=new Intent(MainActivity.this,RegisterActivity.class);
+                Intent intent=new Intent(MainActivity.this,test.class);
                 startActivity(intent);
             }
         });
